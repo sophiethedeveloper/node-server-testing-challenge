@@ -1,4 +1,3 @@
-const { default: expectCt } = require("helmet/dist/middlewares/expect-ct");
 const request = require("supertest");
 const server = require("./server");
 

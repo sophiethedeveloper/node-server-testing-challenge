@@ -9,7 +9,8 @@ module.exports = {
 };
 
 async function add(car) {
-  return null;
+  const [id] = await db("cars").insert(car);
+  return db("cars").where({ id }).first();
 }
 
 async function update(id, changes) {
